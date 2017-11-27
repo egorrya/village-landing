@@ -1,5 +1,5 @@
 .page-footer {
-	background-color: #222;
+	background-color: #000;
 	color: #fff;
 }
 
@@ -13,13 +13,14 @@
 	justify-content: center;
 
 	div {
-		width: 33.3%;
+		width: 70%;
 		padding: 50px 0;
 	}
 }
 
 .page-footer__network{
-	.fa{
+	a{
+		display: inline-block;
 		margin-right: 10px;
 		margin-bottom: 10px;
 		text-align:center;
@@ -47,25 +48,25 @@
 
 
 .page-footer__copy{
-	font-family: 'Montserrat', sans-serif;
-
 	letter-spacing: 1px;
 	text-shadow: -0.6px 0 1px rgb(30,242,241) , 0.6px 0 1px rgb(246,5,10) ;
 
 	text-align: center;
 	margin-top: 10px;
-	color: #eee;
+	color: #fff;
 }
 
 .page-footer__up {
 	text-align: right;
 
-	.fa-angle-double-up {
+	a {
+		display: inline-block;
+		text-decoration: none;
 		cursor: pointer;
 		text-align:center;
 
 		font-size: 25px;
-		line-height: 50px;
+		line-height: 44px;
 
 		width: 50px;
 		height: 50px;
@@ -80,7 +81,7 @@
 @media @m-width-only {
 
 	.page-footer__up {
-		.fa-angle-double-up {
+		a {
 			margin-right: 20px;
 		}
 	}

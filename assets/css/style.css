@@ -289,10 +289,10 @@ input { /* 1 */
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@keyframes fadeInRight {
+@keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -301,8 +301,8 @@ input { /* 1 */
   }
 }
 
-.fadeInRight {
-  animation-name: fadeInRight;
+.fadeInLeft {
+  animation-name: fadeInLeft;
 }
 
 @keyframes fadeInUp {
@@ -367,7 +367,7 @@ body {
   font-size: 16px;
   font-style: 400;
   line-height: 30px;
-  color: #fff;
+  color: #f3bb12;
   background-color: #000;
 }
 h1 {
@@ -375,6 +375,12 @@ h1 {
   font-style: 700;
   line-height: 57px;
   color: #fff;
+}
+h2 {
+  font-size: 20px;
+  font-style: 700;
+  line-height: auto;
+  color: #f3bb12;
 }
 img {
   max-width: 100%;
@@ -389,6 +395,33 @@ img {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+.btn {
+  font-weight: 700;
+  padding: 18px 30px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f3bb12;
+  border: 2px solid #f3bb12;
+  background-color: #000;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+}
+.btn:hover {
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #ccc;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  background-color: #fff;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.btn:active {
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #aaa;
+  background-color: #ddd;
 }
 .page-header {
   position: fixed;
@@ -417,11 +450,69 @@ img {
   width: auto;
 }
 .home-section__title {
-  font-size: 50px;
+  font-size: 40px;
+  line-height: auto;
   margin-bottom: 120px;
-  padding-top: 100px;
+  padding-top: 120px;
   text-align: center;
   text-transform: uppercase;
+}
+.menu {
+  padding: 0 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+.menu__item {
+  text-align: center;
+}
+.menu__item h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.menu__item img {
+  display: inline-block;
+  padding: 0 0px;
+  min-width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.menu__item span {
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.menu__item a.btn {
+  background-color: #000;
+  color: #f3bb12;
+  display: block;
+  padding: 11px;
+  margin-bottom: 20px;
+}
+.page-footer {
+  background-color: #000;
+  color: #fff;
+}
+.page-footer__container-fluid {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.page-footer__container-fluid div {
+  width: 70%;
+  padding: 50px 0;
+}
+.page-footer__copy {
+  letter-spacing: 1px;
+  text-shadow: -0.6px 0 1px #1ef2f1, 0.6px 0 1px #f6050a;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
 }
 @media (min-width: 768px){
 
@@ -495,7 +586,22 @@ img {
   }
 
   .home-section__title{
-    padding-top: 130px;
+    font-size: 50px;
+    padding-top: 140px;
+  }
+
+  .menu{
+    padding: 0 20px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .page-footer__container-fluid{
+    width: 88%;
+    /* 640px / 768px */
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1200px){
@@ -510,6 +616,11 @@ img {
 
   .main-nav__item{
     margin-right: 22px;
+  }
+
+  .menu{
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (max-width: 767px){
