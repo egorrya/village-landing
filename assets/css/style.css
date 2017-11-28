@@ -569,9 +569,12 @@ img {
   font-size: 14px;
 }
 .cart {
+  overflow-x: hidden;
   text-align: center;
 }
 .cart h1 {
+  font-size: 34px;
+  line-height: 36px;
   margin-top: 30px;
   margin-left: 30px;
   text-align: left;
@@ -583,7 +586,6 @@ img {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  overflow-x: hidden;
 }
 .cart__options a {
   font-size: 20px;
@@ -594,10 +596,10 @@ img {
   border-bottom: 1px solid #f3bb12;
 }
 .cart__options a:hover {
+  text-decoration: none;
   background: #000000;
   background: radial-gradient(ellipse at center, rgba(204, 204, 204, 0.2) 0%, #000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000', GradientType=1);
-  text-decoration: none;
 }
 .cart__options a:first-child {
   border-top: 1px solid #f3bb12;
@@ -606,6 +608,8 @@ img {
   text-align: center;
 }
 .shipping h1 {
+  font-size: 34px;
+  line-height: 36px;
   margin-top: 30px;
   margin-left: 30px;
   text-align: left;
@@ -719,6 +723,8 @@ img {
   }
 
   .cart h1{
+    font-size: 50px;
+    line-height: 50px;
     margin-left: 0;
     text-align: center;
   }
@@ -729,8 +735,8 @@ img {
   }
 
   .cart__options a{
-    border-top: 1px solid #f3bb12;
     padding: 100px 20px;
+    border-top: 1px solid #f3bb12;
   }
 
   .cart__options a:first-child{
@@ -738,6 +744,8 @@ img {
   }
 
   .shipping h1{
+    font-size: 50px;
+    line-height: 50px;
     margin-left: 0;
     text-align: center;
   }

@@ -1,12 +1,11 @@
-
 $(document).ready(function(){
 
 	// animate css
 
 	$(".main-nav__items").animated("fadeInLeft");
 	$(".home-section__title").animated("flash");
-	$(".menu__item").animated("fadeInUp");
-	$(".cart__options").animated("slideInRight");
+	$(".menu__item").animated("fadeInLeft");
+	$(".cart__options").animated("slideInLeft");
 
 	$('input.ShowOrHide').click(function() {
 
