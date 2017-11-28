@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 
 	// animate css
@@ -8,5 +7,4 @@ $(document).ready(function(){
 	$(".home-section__title").animated("flash");
 	$(".menu__item").animated("slideInLeft");
 	$(".cart__options").animated("slideInRight");
-
 });
