@@ -583,6 +583,7 @@ img {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  overflow-x: hidden;
 }
 .cart__options a {
   font-size: 20px;
