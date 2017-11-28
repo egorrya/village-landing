@@ -503,9 +503,6 @@ img {
 .checkbox input[type=checkbox]:checked ~ label:after {
   left: 2.6rem;
 }
-.allergy {
-  display: none;
-}
 .menu {
   width: auto;
   padding: 0 30px;
