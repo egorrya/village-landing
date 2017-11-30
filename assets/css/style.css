@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -623,172 +634,142 @@ img {
 .shipping__map iframe {
   width: 100%;
 }
-@media (min-width: 768px){
-
-  .page-header__brand{
+@media (min-width: 768px) {
+  .page-header__brand {
     margin: 0 5vw;
     text-align: left;
   }
-
-  #hamburger{
+  #hamburger {
     display: none;
   }
-
-  .main-nav{
+  .main-nav {
     margin: 0;
   }
-
-  .main-nav__wrapper{
+  .main-nav__wrapper {
     position: absolute;
     top: 22.5px;
     right: 8%;
     display: flex;
     justify-content: space-around;
   }
-
-  .main-nav__items{
+  .main-nav__items {
     display: flex;
     color: #fff;
     flex-grow: 1;
     flex-wrap: wrap;
   }
-
-  .main-nav__item{
+  .main-nav__item {
     margin-right: 15px;
     list-style-type: none;
   }
-
-  .main-nav__item:last-child{
+  .main-nav__item:last-child {
     margin-right: 0;
   }
-
-  .active{
+  .active {
     border-bottom: 2px solid #333;
   }
-
-  .main-nav__item a{
+  .main-nav__item a {
     padding: 0;
     padding-top: 20px;
     padding-bottom: 4px;
     text-decoration: none;
     color: #f3bb12;
   }
-
-  .main-nav__item a[href]:hover{
+  .main-nav__item a[href]:hover {
     border-bottom: 2px solid #333;
   }
-
-  .main-nav__item a[href]:active{
+  .main-nav__item a[href]:active {
     color: #f3bb12;
   }
-
-  .home-section__container-fluid{
+  .home-section__container-fluid {
     width: 88%;
     /* 640px / 768px */
     max-width: 960px;
     margin: 0 auto;
   }
-
-  .menu{
+  .menu {
     width: 88%;
     /* 640px / 768px */
     max-width: 960px;
     margin: 0 auto;
   }
-
-  .home-section__container-fluid{
+  .home-section__container-fluid {
     padding-top: 50px;
     padding-bottom: 100px;
   }
-
-  .home-section__title{
+  .home-section__title {
     font-size: 50px;
     line-height: 50px;
     padding-top: 40px;
     margin-bottom: 110px;
   }
-
-  .menu{
+  .menu {
     padding: 0 20px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-
-  .page-footer__container-fluid{
+  .page-footer__container-fluid {
     width: 88%;
     /* 640px / 768px */
     max-width: 960px;
     margin: 0 auto;
   }
-
-  .cart h1{
+  .cart h1 {
     font-size: 50px;
     line-height: 50px;
     margin-left: 0;
     text-align: center;
   }
-
-  .cart__options{
+  .cart__options {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-
-  .cart__options a{
+  .cart__options a {
     padding: 100px 20px;
     border-top: 1px solid #f3bb12;
   }
-
-  .cart__options a:first-child{
+  .cart__options a:first-child {
     border-right: 1px solid #f3bb12;
   }
-
-  .shipping h1{
+  .shipping h1 {
     font-size: 50px;
     line-height: 50px;
     margin-left: 0;
     text-align: center;
   }
-
-  .shipping__map iframe{
+  .shipping__map iframe {
     width: 100%;
     height: 500px;
   }
 }
-@media (min-width: 1200px){
-
-  .page-header__brand{
+@media (min-width: 1200px) {
+  .page-header__brand {
     margin: 0 15vw;
   }
-
-  .main-nav__wrapper{
+  .main-nav__wrapper {
     right: 15%;
   }
-
-  .main-nav__item{
+  .main-nav__item {
     margin-right: 22px;
   }
-
-  .menu{
+  .menu {
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (max-width: 767px){
-
-  .main-nav{
+@media (max-width: 767px) {
+  .main-nav {
     position: relative;
     width: auto;
   }
-
-  .main-nav__items{
+  .main-nav__items {
     font-weight: bold;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-
-  .main-nav__item a{
+  .main-nav__item a {
     display: block;
     padding: 16px 25px;
     text-decoration: none;
@@ -797,26 +778,22 @@ img {
     border-bottom: 1px solid #333;
     background-color: #212121;
   }
-
-  .main-nav__item a:hover{
+  .main-nav__item a:hover {
     color: #000;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
     background-color: #ccc;
   }
   /* HAMBURGER */
-
-  #hamburger{
+  #hamburger {
     display: none;
   }
-
-  .main-nav__wrapper{
+  .main-nav__wrapper {
     display: none;
     transition-delay: .2s;
     transition-duration: .2s;
   }
-
-  .menuicon{
+  .menuicon {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -825,57 +802,47 @@ img {
     height: 21px;
     cursor: pointer;
   }
-
   .menuicon span,
   .menuicon span::after,
-  .menuicon span::before{
+  .menuicon span::before {
     display: block;
     width: 30px;
     height: 5px;
     background-color: #f3bb12;
   }
-
-  .menuicon span{
+  .menuicon span {
     position: relative;
     top: -51px;
     left: 10px;
     transition-delay: .2s;
   }
-
   .menuicon span::after,
-  .menuicon span::before{
+  .menuicon span::before {
     position: absolute;
     content: '';
     transition-delay: .2s;
     transition-duration: .2s;
   }
-
-  .menuicon span::before{
+  .menuicon span::before {
     margin-top: -8px;
   }
-
-  .menuicon span::after{
+  .menuicon span::after {
     margin-top: 8px;
   }
-
-  #hamburger:checked ~ .main-nav__wrapper{
+  #hamburger:checked ~ .main-nav__wrapper {
     display: block;
   }
-
-  #hamburger:checked ~ .menuicon span{
+  #hamburger:checked ~ .menuicon span {
     background-color: transparent;
   }
-
   #hamburger:checked ~ .menuicon span::before,
-  #hamburger:checked ~ .menuicon span::after{
+  #hamburger:checked ~ .menuicon span::after {
     margin-top: 0;
   }
-
-  #hamburger:checked ~ .menuicon span::before{
+  #hamburger:checked ~ .menuicon span::before {
     transform: rotate(45deg);
   }
-
-  #hamburger:checked ~ .menuicon span::after{
+  #hamburger:checked ~ .menuicon span::after {
     transform: rotate(-45deg);
   }
 }
