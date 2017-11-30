@@ -1,157 +1,164 @@
 .home-section {
-  background: url(./../img/mark-claus-222807.jpg) no-repeat ;
-  background-color: #000;
-  background-position: 10% bottom;
-  background-size: cover;
+	background: url(./../img/mark-claus-222807-m.jpg) no-repeat ;
+	background-color: #000;
+	background-position: 10% bottom;
+	background-size: cover;
 }
 
 .home-section__container-fluid {
-  padding: 20px;
-  padding-bottom: 80px;
+	padding: 20px;
+	padding-bottom: 80px;
 
-  .container-fluid();
+	.container-fluid();
 }
 
 
 .home-section__title {
-  font-size: 34px;
-  line-height: 36px;
+	font-size: 34px;
+	line-height: 36px;
 
-  margin-bottom: 80px;
-  padding-top: 30px;
+	margin-bottom: 80px;
+	padding-top: 30px;
 
-  text-align: center;
-  text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .allergy {
-  margin: 20px;
-  text-align: center;
-  span {
-    margin-left: 10px;
-  }
+	margin: 20px;
+	text-align: center;
+	span {
+		margin-left: 10px;
+	}
 }
 /* Rounded */
 .checkbox {
-  display: inline-block;
-  width: 4.5rem;
-  height: 2rem;
-  position: relative;
+	display: inline-block;
+	width: 4.5rem;
+	height: 2rem;
+	position: relative;
 }
 .checkbox input {
-  opacity: 0;
+	opacity: 0;
 }
 .checkbox label {
-  cursor: pointer;
-  position: absolute;
-  background-color: #e9513a;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 3.125rem;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
+	cursor: pointer;
+	position: absolute;
+	background-color: #e9513a;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 3.125rem;
+	-webkit-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
 }
 .checkbox label:after {
-  content: "";
-  display: block;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 3.125rem;
-  cursor: pointer;
-  position: absolute;
-  top: .3rem;
-  z-index: 1;
-  left: .5rem;
-  background-color: #FFFFFD;
-  -webkit-transition: left .2s ease-in-out;
-  transition: left .2s ease-in-out;
+	content: "";
+	display: block;
+	width: 1.4rem;
+	height: 1.4rem;
+	border-radius: 3.125rem;
+	cursor: pointer;
+	position: absolute;
+	top: .3rem;
+	z-index: 1;
+	left: .5rem;
+	background-color: #FFFFFD;
+	-webkit-transition: left .2s ease-in-out;
+	transition: left .2s ease-in-out;
 }
 .checkbox input[type=checkbox]:checked ~ label {
-  background-color: #4fbe79;
+	background-color: #4fbe79;
 }
 
 .checkbox input[type=checkbox]:checked ~ label:after {
-  left: 2.6rem;
+	left: 2.6rem;
 }
 
 .checkbox input[type=checkbox]:checked ~ .allergic  {
-  display: none;
+	display: none;
 }
 
 .menu {
-  .container-fluid();
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 1fr;
+	.container-fluid();
+	padding: 0 30px;
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .menu__item {
-  display: block;
-  text-align: center;
+	display: block;
+	text-align: center;
 
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 
-  h2 {
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
+	h2 {
+		font-size: 22px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
 
-  .menu__image {
-    display: block;
-    padding: 0 0px;
-    max-height: 250px;
-    overflow: hidden;
-    margin-bottom: 11px;
-    img {
+	.menu__image {
+		display: block;
+		padding: 0 0px;
+		max-height: 250px;
+		overflow: hidden;
+		margin-bottom: 11px;
+		img {
 
-    }
-  }
+		}
+	}
 
-  span {
-    font-size: 20px;
-    display: block;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+	span {
+		font-size: 20px;
+		display: block;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
 
-  a.btn {
-    background-color: #000;
-    color: #f3bb12;
-    display: block;
-    padding: 11px;
-    margin-bottom: 20px;
-  }
+	a.btn {
+		background-color: #000;
+		color: #f3bb12;
+		display: block;
+		padding: 11px;
+		margin-bottom: 20px;
+	}
 }
 
 @media @t-width {
-  .home-section__container-fluid {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
+	.home-section {
+		background: url(./../img/mark-claus-222807.jpg) no-repeat ;
+		background-color: #000;
+		background-position: 10% bottom;
+		background-size: cover;
+	}
 
-  .home-section__title {
-    font-size: 50px;
-    line-height: 50px;
+	.home-section__container-fluid {
+		padding-top: 50px;
+		padding-bottom: 120px;
+	}
 
-    padding-top: 40px;
-    margin-bottom: 110px;
-  }
+	.home-section__title {
+		font-size: 50px;
+		line-height: 50px;
 
-  .menu {
-    padding: 0 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
-  }
+		padding-top: 40px;
+		margin-bottom: 110px;
+	}
+
+	.menu {
+		padding: 0 20px;
+		grid-template-columns: 1fr 1fr;
+		grid-gap:20px;
+	}
 }
 
 @media @d-width {
 
-  .menu {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+	.menu {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
