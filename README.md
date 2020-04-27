@@ -1,4 +1,4 @@
-# Проект кафе Village
-Проект, благодаря которому мы выиграли кейс-чемпионат Алтайского Края
+# Village Cafe
+We won Bussiness Case Championship in Altai in 2018 because of this project.
 
-### [Перейти](https://faynco.github.io/village/)
+### [Go to](https://egorrya.github.io/village/)
