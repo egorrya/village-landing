@@ -1,4 +1,4 @@
 # Проект кафе Village
 Проект, благодаря которому мы выиграли кейс-чемпионат Алтайского Края
 
-### [Перейти](https://faynco.github.io/village/)
+### [Перейти](https://egorrya.github.io/village-landing/)
